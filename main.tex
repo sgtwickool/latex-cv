@@ -1,0 +1,123 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+
+% New color palette
+\definecolor{DeepTeal}{HTML}{007377}
+\definecolor{DarkNavy}{HTML}{112233}
+\definecolor{SoftGrey}{HTML}{4D4D4D}
+\definecolor{WarmHighlight}{HTML}{FF6F5E} % Optional for strong accents
+
+\colorlet{accent}{DeepTeal}
+\colorlet{tagline}{DeepTeal}
+\colorlet{heading}{DarkNavy}
+\colorlet{headingrule}{DarkNavy}
+\colorlet{emphasis}{DarkNavy}
+\colorlet{body}{SoftGrey}
+
+
+\name{Greg Kemp}{}
+\tagline{Full-Stack Engineer | Cloud-Ready Developer | Pragmatic Problem Solver}
+
+\personalinfo{
+  \location{Budapest, Hungary}
+  \phone{+44 7965 482 696}
+  \email{greg@kempgt.com}
+  \github{github.com/sgtwickool}
+  \linkedin{linkedin.com/in/kempgt}
+  %\homepage{kempgt.com}
+}
+
+\begin{document}
+
+\makecvheader
+
+\columnratio{0.6}
+\begin{paracol}{2}
+
+\cvsection{PROFILE}
+A pragmatic full-stack engineer with over 10 years of experience designing and building web applications. Skilled in .NET, Angular, and Azure, with a strong understanding of scalable architecture, clean code, and DevOps practices. Passionate about creating tools that help people navigate complex systems. Practical thinker who values real-world impact over perfectionism, and thrives in collaborative, fast-moving environments.
+
+\cvsection{CORE SKILLS}
+\cvtag{.NET 8}
+\cvtag{C\#}
+\cvtag{Angular}
+\cvtag{TypeScript}
+\cvtag{SQL}
+\cvtag{Python}
+
+\cvsection{CLOUD \& DEVOPS}
+\cvtag{Azure}
+\cvtag{Serverless Architectures}
+\cvtag{Dev Containers}
+\cvtag{Docker}
+\cvtag{Octopus Deploy}
+\cvtag{CI/CD}
+\cvtag{Jenkins}
+\cvtag{GitHub Actions}
+
+\cvsection{TOOLS \& FRAMEWORKS}
+\cvtag{Entity Framework}
+\cvtag{ASP.NET}
+\cvtag{REST APIs}
+\cvtag{RxJS}
+\cvtag{NgRx}
+\cvtag{Swagger / OpenAPI}
+\cvtag{Azure Functions}
+\cvtag{Event-driven Design}
+
+
+\cvsection{VALUES \& APPROACH}
+\begin{itemize}
+  \item \textbf{Pragmatic Problem-Solving}: Focus on scalable, maintainable solutions that deliver real value.
+  \item \textbf{Bias for Action}: Comfortable taking initiative and ownership in fast-paced environments.
+  \item \textbf{Curious and Collaborative}: Always learning and sharing knowledge with teammates.
+  \item \textbf{Driven by Impact}: Motivated by building tools that make people's work simpler and better.
+\end{itemize}
+
+\cvsection{SELECTED ACHIEVEMENTS}
+\begin{itemize}
+  \item Key contributor to the rebuild of TariffTel, a full rewrite of a legacy customs classification platform, using .NET 8 and Angular, hosted in Azure.
+  \item Improved state management performance and cost efficiency by designing a new NgRx Signal Store pattern.
+  \item Contributed to DevOps transformation including containerisation, CI/CD pipelines, and modular monolith design.
+  \item Helped move company services to a modern cloud-first infrastructure using Azure, improving scalability and reducing operating costs.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{EXPERIENCE}
+
+\cvevent{Senior Developer}{CORE (UK) Ltd. (TariffTel), London/Budapest}{Jun 2014 -- Present}{}
+\begin{itemize}
+  \item Full-stack development across supply chain, customs, and sustainability products.
+  \item Architected and implemented key systems using .NET, SQL Server, and Angular.
+  \item Worked closely with product and UX to deliver intuitive, performant interfaces.
+  \item Advocated for clean architecture, modern DevOps, and testable code practices.
+\end{itemize}
+
+\divider
+
+\cvevent{Technical Support Intern}{Fusion for Energy (ITER), Barcelona}{Jun 2012 -- Sep 2012}{}
+\begin{itemize}
+  \item Developed dynamic simulations for reactor components using ANSYS.
+  \item Gained experience in APDL scripting and structural analysis.
+\end{itemize}
+
+\cvsection{EDUCATION}
+
+\cvevent{MSc Fusion Energy}{University of York, UK}{2018 -- 2019}{}
+\cvevent{BEng Mechanical Engineering (Hons)}{Cardiff University, UK}{2007 -- 2013}{}
+
+\cvsection{LANGUAGES}
+\cvskill{English}{5}
+\cvskill{Hungarian}{4}
+\cvskill{Spanish}{2}
+
+\cvsection{HOBBIES}
+Climbing, mountaineering, music (guitar/ bass/piano), outdoor swimming, caving.
+
+\end{paracol}
+
+\end{document}
