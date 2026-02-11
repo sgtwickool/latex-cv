@@ -4,11 +4,10 @@
 
 \usepackage{paracol}
 
-% New color palette
+% Color palette
 \definecolor{DeepTeal}{HTML}{007377}
 \definecolor{DarkNavy}{HTML}{112233}
 \definecolor{SoftGrey}{HTML}{4D4D4D}
-\definecolor{WarmHighlight}{HTML}{FF6F5E} % Optional for strong accents
 
 \colorlet{accent}{DeepTeal}
 \colorlet{tagline}{DeepTeal}
@@ -17,9 +16,8 @@
 \colorlet{emphasis}{DarkNavy}
 \colorlet{body}{SoftGrey}
 
-
 \name{Greg Kemp}{}
-\tagline{Full-Stack Engineer | Cloud-Ready Developer | Pragmatic Problem Solver}
+\tagline{Senior Full-Stack Engineer \textbar{} Systems Architect \textbar{} Product Builder}
 
 \personalinfo{
   \location{Budapest, Hungary}
@@ -27,7 +25,6 @@
   \email{greg@kempgt.com}
   \github{github.com/sgtwickool}
   \linkedin{linkedin.com/in/kempgt}
-  %\homepage{kempgt.com}
 }
 
 \begin{document}
@@ -38,85 +35,92 @@
 \begin{paracol}{2}
 
 \cvsection{PROFILE}
-A pragmatic full-stack engineer with over 10 years of experience designing and building web applications. Skilled in .NET, Angular, and Azure, with a strong understanding of scalable architecture, clean code, and DevOps practices. Passionate about creating tools that help people navigate complex systems. Practical thinker who values real-world impact over perfectionism, and thrives in collaborative, fast-moving environments.
-
-\cvsection{CORE SKILLS}
-\cvtag{.NET 8}
-\cvtag{C\#}
-\cvtag{Angular}
-\cvtag{TypeScript}
-\cvtag{SQL}
-\cvtag{Python}
-
-\cvsection{CLOUD \& DEVOPS}
-\cvtag{Azure}
-\cvtag{Serverless Architectures}
-\cvtag{Dev Containers}
-\cvtag{Docker}
-\cvtag{Octopus Deploy}
-\cvtag{CI/CD}
-\cvtag{Jenkins}
-\cvtag{GitHub Actions}
-
-\cvsection{TOOLS \& FRAMEWORKS}
-\cvtag{Entity Framework}
-\cvtag{ASP.NET}
-\cvtag{REST APIs}
-\cvtag{RxJS}
-\cvtag{NgRx}
-\cvtag{Swagger / OpenAPI}
-\cvtag{Azure Functions}
-\cvtag{Event-driven Design}
-
-
-\cvsection{VALUES \& APPROACH}
-\begin{itemize}
-  \item \textbf{Pragmatic Problem-Solving}: Focus on scalable, maintainable solutions that deliver real value.
-  \item \textbf{Bias for Action}: Comfortable taking initiative and ownership in fast-paced environments.
-  \item \textbf{Curious and Collaborative}: Always learning and sharing knowledge with teammates.
-  \item \textbf{Driven by Impact}: Motivated by building tools that make people's work simpler and better.
-\end{itemize}
-
-\cvsection{SELECTED ACHIEVEMENTS}
-\begin{itemize}
-  \item Key contributor to the rebuild of TariffTel, a full rewrite of a legacy customs classification platform, using .NET 8 and Angular, hosted in Azure.
-  \item Improved state management performance and cost efficiency by designing a new NgRx Signal Store pattern.
-  \item Contributed to DevOps transformation including containerisation, CI/CD pipelines, and modular monolith design.
-  \item Helped move company services to a modern cloud-first infrastructure using Azure, improving scalability and reducing operating costs.
-\end{itemize}
-
-\switchcolumn
+I build complete products end-to-end, from database schema to production UI. Originally a mechanical engineer and fusion energy researcher, I bring a first-principles mindset to software. Over 10 years shipping production systems across 6+ greenfield products for brands like Primark and SuperDry. Currently driving a ground-up platform rewrite, replacing a legacy system spanning 10 databases with a modern .NET and Angular stack.
 
 \cvsection{EXPERIENCE}
 
-\cvevent{Senior Developer}{CORE (UK) Ltd. (TariffTel), London/Budapest}{Jun 2014 -- Present}{}
+\cvevent{CORE (UK) Ltd $\rightarrow$ TariffTel}{Trade compliance software for global brands}{Jun 2014 -- Present}{}
+Joined as a junior developer. Grew into a senior architect across 6+ greenfield product builds, a company rebrand, and a major platform rewrite, all within a small, high-ownership team.
+
+\medskip
+{\color{accent}\textbf{Senior Developer / Architect} \hfill \textit{2022 -- Present}}
 \begin{itemize}
-  \item Full-stack development across supply chain, customs, and sustainability products.
-  \item Architected and implemented key systems using .NET, SQL Server, and Angular.
-  \item Worked closely with product and UX to deliver intuitive, performant interfaces.
-  \item Advocated for clean architecture, modern DevOps, and testable code practices.
+  \item Architecting TariffTel 2.0: ground-up rewrite of a 10+ year legacy platform (WebForms, WinForms, millions of lines of SQL across 10 database repos) into .NET 8/10 and Angular 19. Clean Architecture, CQRS, SignalR, Entra ID SSO. Built from scratch in under a year.
+  \item Delivered a new Master Data Management System on .NET 10 with a custom CQRS dispatcher and Dapper for performance-critical paths.
+  \item Own architectural decisions, mentor developers, and step into the tech lead role when needed.
 \end{itemize}
 
-\divider
-
-\cvevent{Technical Support Intern}{Fusion for Energy (ITER), Barcelona}{Jun 2012 -- Sep 2012}{}
+\smallskip
+{\color{accent}\textbf{Developer} \hfill \textit{2017 -- 2022}}
 \begin{itemize}
-  \item Developed dynamic simulations for reactor components using ANSYS.
-  \item Gained experience in APDL scripting and structural analysis.
+  \item Built \textbf{Customs Connect}: customs declaration software for Primark. Rebuilt v2 as a serverless Azure Functions app integrating classification and supply chain data to automate declarations.
+  \item Built \textbf{LEAF}: sustainability reporting platform (fibre origin tracking, SCAP scheme). Adopted by Primark; being evaluated by SuperDry before their restructure.
+  \item Built \textbf{TariffTel Essentials} (B2C classifier) and later \textbf{TariffTel Premium} (B2B, built single-handedly), which laid the groundwork for the TariffTel 2.0 rewrite.
 \end{itemize}
+
+\smallskip
+{\color{accent}\textbf{Junior Developer} \hfill \textit{2014 -- 2017}}
+\begin{itemize}
+  \item Supply chain and classification software for Primark, SuperDry, Triumph Motorcycles. First greenfield project: sustainability reporting for Primark's SCAP fibre-origin programme.
+\end{itemize}
+
+\cvsection{SIDE PROJECTS}
+\textbf{CodeMop}: AI code review tool (Python/FastAPI/PostgreSQL). Hooks into GitHub PRs and suggests improvements automatically.
+\smallskip
+
+\textbf{DevSync}: Multi-tenant snippet manager with team collaboration. Next.js 16, PostgreSQL full-text search, NextAuth, RBAC, Docker.
+\smallskip
+
+\textbf{EV Fleet Platform}: .NET 8 fleet API + Python/Flask optimization engine using Google OR-Tools for vehicle routing.
+
+\switchcolumn
+
+\cvsection{WHAT I BRING}
+\begin{itemize}
+  \item \textbf{Ship complete products}: database to UI, auth to deployment, working solo or in a team.
+  \item \textbf{Design systems that last}: Clean Architecture, CQRS, modular boundaries, tested and documented.
+  \item \textbf{Pick up anything}: C\#, TypeScript, Python, React, Node. Whatever the problem needs.
+  \item \textbf{Move fast, don't cut corners}: Docker, CI/CD, automated tests, and structured logging from day one.
+\end{itemize}
+
+\cvsection{TECH}
+\cvtag{C\#/.NET}
+\cvtag{TypeScript}
+\cvtag{Angular}
+\cvtag{React}
+\cvtag{Python}
+\cvtag{Node.js}
+\cvtag{SQL Server}
+\cvtag{PostgreSQL}
+\medskip
+
+\cvtag{Azure}
+\cvtag{Docker}
+\cvtag{CI/CD}
+\cvtag{GitHub Actions}
+\medskip
+
+\cvtag{Clean Architecture}
+\cvtag{CQRS}
+\cvtag{SignalR}
+\cvtag{REST APIs}
+\cvtag{EF Core}
+\cvtag{Dapper}
 
 \cvsection{EDUCATION}
 
-\cvevent{MSc Fusion Energy}{University of York, UK}{2018 -- 2019}{}
-\cvevent{BEng Mechanical Engineering (Hons)}{Cardiff University, UK}{2007 -- 2013}{}
+\cvevent{MSc Fusion Energy}{University of York}{2018 -- 2019}{}
+\cvevent{BEng Mechanical Eng. (Hons)}{Cardiff University}{2007 -- 2013}{}
+\smallskip
+{\small Career pivot from engineering to software. I taught myself to code and apply a physicist's rigour to system design.}
 
 \cvsection{LANGUAGES}
 \cvskill{English}{5}
 \cvskill{Hungarian}{4}
 \cvskill{Spanish}{2}
 
-\cvsection{HOBBIES}
-Climbing, mountaineering, music (guitar/ bass/piano), outdoor swimming, caving.
+\cvsection{OUTSIDE WORK}
+Climbing, mountaineering, caving, outdoor swimming, music (guitar, bass, piano).
 
 \end{paracol}
 
